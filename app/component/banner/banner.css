@@ -1,0 +1,179 @@
+@keyframes move {
+  0% {
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translateY(1.5%) rotate(-1.3deg) scale(1.01); /* Move to the right */
+  }
+  100% {
+    transform: translateY(0) rotate(0deg) scale(1); /* Back to start position */
+  }
+}
+.phone {
+  animation: move 10s linear infinite; /* Adjust duration and easing as needed */
+}
+
+@keyframes leafMove {
+  0% {
+    transform: translateX(-100%) rotate(0deg); /* Start position */
+  }
+  50% {
+    transform: translateX(-100%) rotate(15deg); /* Move to the right */
+  }
+  100% {
+    transform: translateX(-100%) rotate(0deg);
+  }
+}
+
+.leftLeaf {
+  animation: leafMove 15s linear infinite;
+  transform: translateX(-100%);
+}
+
+@keyframes leafMove2 {
+  0% {
+    transform: translateX(-100%) rotate(0deg); /* Start position */
+  }
+  50% {
+    transform: translateX(-100%) rotate(-15deg); /* Move to the right */
+  }
+  100% {
+    transform: translateX(-100%) rotate(0deg);
+  }
+}
+
+.leftLeafSmall {
+  animation: leafMove2 15s linear infinite;
+  transform: translateX(-100%);
+}
+
+@keyframes pinkLeaf {
+  0% {
+    transform: translateX(-100%) rotate(0deg) scaleX(0.9); /* Start position */
+  }
+  50% {
+    transform: translateX(-100%) rotate(5deg) scaleX(1); /* Move to the right */
+  }
+  100% {
+    transform: translateX(-100%) rotate(0deg) scaleX(0.9);
+  }
+}
+
+.pinkLeaf {
+  animation: pinkLeaf 15s linear infinite;
+  transform: translateX(-100%);
+}
+
+@keyframes rightLeafMOve {
+  0% {
+    transform: translateX(-100%) rotate(0deg); /* Start position */
+  }
+  50% {
+    transform: translateX(-100%) rotate(6deg); /* Move to the right */
+  }
+  100% {
+    transform: translateX(-100%) rotate(0deg);
+  }
+}
+
+.rightLeaf {
+  animation: rightLeafMOve 15s linear infinite;
+  transform: translateX(-100%);
+}
+
+@keyframes love {
+  0% {
+    transform: rotate(0deg) scale(0.7); /* Start position */
+  }
+  50% {
+    transform: rotate(-10deg) scale(1); /* Move to the right */
+  }
+  100% {
+    transform: rotate(0deg) scale(0.7);
+  }
+}
+
+.love {
+  animation: love 5s linear infinite;
+}
+
+@keyframes like {
+  0% {
+    transform: rotate(10deg) scale(0.9); /* Start position */
+  }
+  50% {
+    transform: rotate(-20deg) scale(1); /* Move to the right */
+  }
+  100% {
+    transform: rotate(10deg) scale(0.9);
+  }
+}
+
+.like {
+  animation: like 5s linear infinite;
+}
+
+@keyframes chat {
+  0% {
+    transform: rotate(0deg) scale(0.9); /* Start position */
+  }
+  50% {
+    transform: rotate(20deg) scale(1); /* Move to the right */
+  }
+  100% {
+    transform: rotate(0deg) scale(0.9);
+  }
+}
+
+.chat {
+  animation: chat 5s linear infinite;
+}
+
+@keyframes rocket {
+  0% {
+    transform: translateY(0%) rotate(0) scale(0.9); /* Start position */
+  }
+  50% {
+    transform: translateY(15%) rotate(-15deg) scale(1); /* Move to the right */
+  }
+  100% {
+    transform: translateY(0%) rotate(0) scale(0.9);
+  }
+}
+
+.rocket {
+  animation: rocket 5s linear infinite;
+  transform: translateY(0%);
+}
+
+@keyframes twitter {
+  0% {
+    transform: rotate(0deg) scale(0.9); /* Start position */
+  }
+  50% {
+    transform: rotate(-20deg) scale(1); /* Move to the right */
+  }
+  100% {
+    transform: rotate(0deg) scale(0.9);
+  }
+}
+
+.twitter {
+  animation: twitter 5s linear infinite;
+}
+
+@keyframes mail {
+  0% {
+    transform: rotate(0deg) scale(0.9); /* Start position */
+  }
+  50% {
+    transform: rotate(-10deg) scale(1); /* Move to the right */
+  }
+  100% {
+    transform: rotate(0deg) scale(0.9);
+  }
+}
+
+.mail {
+  animation: mail 5s linear infinite;
+}

@@ -16,7 +16,7 @@ import { IoChatbubbleOutline } from "react-icons/io5";
 import Link from "next/link";
 
 const blogDetails = () => {
-  let [searchShow, setSearchShow] = useState();
+  let [searchShow, setSearchShow] = useState("");
 
   let searchBlog = (e) => {
     let search = e.target.value;
@@ -226,7 +226,6 @@ const blogDetails = () => {
             <span className="para">Download</span>
           </div>
           {/* ===========Tags====== */}
-          {/* <Calendar className="w-[500px] h-[300px]" /> */}
         </div>
       </Container>
     </div>

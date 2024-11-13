@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import Container from "../layer/Container";
 import Dot from "../layer/Dot";
 import { FaCircle } from "react-icons/fa";
+import Image from "next/image";
 
-const BredCumb = () => {
+const BredCumb = ({ src }) => {
   const [path, setPath] = useState("");
 
   useEffect(() => {
@@ -15,7 +16,7 @@ const BredCumb = () => {
 
   return (
     <div className="bg-bannerBg2 pt-[159px] bg-no-repeat bg-bottom bg-cover pb-[181px]">
-      <Container>
+      <Container className="relative">
         <h2 className="text-[60px] font-semibold capitalize leading-[100%] text-white font-grotesque">
           {path}
         </h2>
@@ -27,6 +28,7 @@ const BredCumb = () => {
           <span className="capitalize font-roboto text-sm leading-[170%] text-[#B3B1B7]">
             {path}
           </span>
+          <Image src={src} className="absolute top-[103px] left-[-324px]" />
         </div>
       </Container>
     </div>

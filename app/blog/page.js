@@ -14,6 +14,7 @@ import textBlog from "../../public/banner/texxtBlog.png";
 import dew from "../../public/bgDew2.png";
 import { IoChatbubbleOutline } from "react-icons/io5";
 import Link from "next/link";
+import Calendar from "../component/Calender";
 
 const blogDetails = () => {
   let [searchShow, setSearchShow] = useState("");
@@ -24,9 +25,8 @@ const blogDetails = () => {
   };
   return (
     <div>
-      <BredCumb />
+      <BredCumb src={textBlog} />
       <Container className="relative pt-[90px] pb-[45px] grid grid-cols-4 gap-12">
-        <Image src={textBlog} className="absolute top-[-193px] left-[-319px]" />
         <Image src={dew} className="absolute top-[297px] left-[-310px]" />
         <div className="left flex flex-col gap-12 col-span-3">
           <div className="overflow-hidden shadow-lg shadow-[#30158713] rounded-[20px]">
@@ -207,7 +207,19 @@ const blogDetails = () => {
           {/* ===========December 2020====== */}
           <h3 className="title mt-[50px]">December 2020</h3>
           <Image src={line} className="mb-[25px] mt-[10px]" />
+          <Calendar />
           {/* ===========December 2020====== */}
+
+          {/* ===========gallery====== */}
+          <div className="grid grid-cols-3 gap-1 h-[173px] w-[260px] mt-[50px]">
+            <div className="bg-[#E6EBFC] "></div>
+            <div className="bg-[#E6EBFC] "></div>
+            <div className="bg-[#E6EBFC] "></div>
+            <div className="bg-[#E6EBFC] "></div>
+            <div className="bg-[#E6EBFC] "></div>
+            <div className="bg-[#E6EBFC] "></div>
+          </div>
+          {/* ===========gallery====== */}
 
           {/* ===========Tags====== */}
           <h3 className="title mt-[50px]">Tags</h3>
